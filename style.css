@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "banner"
+        "cardcontainer"
+        "footer";
+
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(67, 141, 206);
+}
+
+.banner {
+    grid-area: banner;
+    background-color: aqua;
+}
+
+.card-container {
+    grid-area: cardcontainer;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    border: 1px red solid;
+    margin: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(20, 51, 51);
+}
