@@ -41,6 +41,24 @@ body {
 .header {
     grid-area: header;
     height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.header a {
+    color:#FF4C4C;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.header button {
+    width: 167px;
+    height: 56px;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
 }
 
 .banner {
