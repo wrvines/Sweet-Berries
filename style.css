@@ -29,63 +29,37 @@ body {
 .grid-container {
     display: grid;
     gap: 10px;
-    grid-auto-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "banner"
-        "cardcontainer"
-        "footer";
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 1fr 1fr 50px;
+    
 }
 
 .header {
-    grid-area: header;
-    height: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 25px;
-}
-
-.header a {
-    color:#FF4C4C;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.header button {
-    width: 167px;
-    height: 56px;
-    border-radius: 28px;
-    background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
+    padding: 15px;
+    grid-column: span 3;
+    grid-row: span 1;
+    border: 1px red solid;
 }
 
 .banner {
-    grid-area: banner;
-    padding: 5px;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    grid-column: span 3;
+    grid-row: span 1;
+    border: 1px blue solid;
 }
-.banner h1, p {
-    margin: 5px;
-    align-self: center;
-    width: 325px;
-}
-.banner img {
-    padding: 5px;
-    align-self: center;
-    height: 217px;
-    width: 347px;
-    border-radius: 16px;
-}
+
 .card-container {
-    grid-area: cardcontainer;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: 1px green solid;
+    grid-column: span 3;
+    grid-row: span 2;
 }
 
 .card {
@@ -97,8 +71,9 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    align-content: space-around;
+    background-color: #FFFFFF;
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border: 1px hotpink solid;
 }
 
 .card img {
@@ -110,163 +85,16 @@ body {
     color: #FF4C4C;
 }
 
-.cooking1 {
-    background-color: #FFFFFF;
-    order: 2;
-}
-
-.cooking2 {
-    background-color: #FFFFFF;
-    order: 3;
-}
-
 .cooking3 {
     background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
-    height: 100px;
     color: white;
     padding: 10px;
     text-align: center;
-    order: 1;
-}
-
-.cooking4 {
-    background-color: #FFFFFF;
-    order: 4;
-}
-
-.cooking5 {
-    background-color: #FFFFFF;
-    order: 5;
-}
-
-.cooking6 {
-    background-color: #FFFFFF;
-    order: 6;
 }
 
 .footer {
-    grid-area: footer;
     background-color: #FF4C4C;
     color: #FFFFFF;
-    text-align: center;
+    text-align: left;
     padding: 15px;
-    height: 50px;
-}
-
-@media (min-width: 800px) {
-    .grid-container {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
-            "banner banner"
-            "cardcontainer cardcontainer"
-            "footer footer";
-    
-    }
-
-    .banner {
-        background-color: aqua;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 25px;
-        padding: 25px;
-    }
-    
-    .banner-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .banner h1, p {
-        width: 500px;
-    }
-    .banner img {
-        height: 344px;
-        width: 612px;
-    }
-    
-    .card {
-        margin: 25px;
-    }
-
-    .cooking1 {
-        order: 1;
-    }
-    .cooking2 {
-        order: 2;
-    }
-    .cooking3 {
-        order: 3;
-        height: 322px;
-        width: 350px;
-    }
-    .cooking4 {
-        order: 4;
-    }
-    .cooking5 {
-        order: 5;
-    }
-    .cooking6 {
-        order: 6;
-    }
-}
-
-
-@media (min-width: 1200px) {
-    .grid-container {
-        display: grid;
-        gap: 10px;
-        grid-template-columns:  1fr 1fr 1fr ;
-        grid-template-areas:
-            "header header header"
-            "banner banner banner"
-            "cardcontainer cardcontainer cardcontainer"
-            "footer footer footer";
-    
-    }
-
-    .banner {
-        background-color: pink;
-        padding: 5px;
-        max-width: 1300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .card {
-        height: 322px;
-        width: 350px;
-        margin: 25px;
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    .banner-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        align-content: center;
-    }
-    .banner h1, p {
-        margin: 5px;
-        width: 500px;
-    }
-    .banner img {
-        padding: 5px;
-        height: 364px;
-        width: 757px;
-        border-radius: 16px;
-    }
-
-    
 }
