@@ -1,7 +1,29 @@
+/*
+- Primary Color
+
+       - #FF4C4C
+
+- Secondary Color
+
+       - #A94E97
+
+- Text Colors
+
+      - Black: #000000
+
+      - Grey: #83869A
+
+      - Links: #FF4C4C
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 .grid-container {
@@ -57,6 +79,10 @@
     margin: 10px;
 }
 
+.cooking3 {
+    background-color: #A94E97;
+    
+}
 .footer {
     grid-area: footer;
     background-color: rgb(20, 51, 51);
