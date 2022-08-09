@@ -25,14 +25,29 @@
 .banner {
     grid-area: banner;
     background-color: aqua;
-    height: 350px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-
+.banner h1 {
+    margin: 5px;
+    align-self: center;
+}
+.banner p {
+    margin: 5px;
+    align-self: center;
+}
+.banner img {
+    padding: 5px;
+    align-self: center;
+}
 .card-container {
     grid-area: cardcontainer;
     background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -46,4 +61,49 @@
     grid-area: footer;
     background-color: rgb(20, 51, 51);
     height: 50px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+            "header header"
+            "banner banner"
+            "cardcontainer cardcontainer"
+            "footer footer";
+    
+    }
+
+    .banner {
+        grid-area: banner;
+        background-color: aqua;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 1250px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header header"
+            "banner banner banner banner"
+            "cardcontainer cardcontainer cardcontainer cardcontainer"
+            "footer footer footer footer";
+    
+    }
+
+    .banner {
+        grid-area: banner;
+        background-color: aqua;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
