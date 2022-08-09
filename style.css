@@ -50,19 +50,17 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
-.banner h1 {
+.banner h1, p {
     margin: 5px;
     align-self: center;
-}
-.banner p {
-    margin: 5px;
-    align-self: center;
+    width: 325px;
 }
 .banner img {
     padding: 5px;
     align-self: center;
     height: 217px;
     width: 347px;
+    border-radius: 16px;
 }
 .card-container {
     grid-area: cardcontainer;
@@ -72,13 +70,13 @@ body {
 }
 
 .card {
-    height: 300px;
-    width: 300px;
+    height: 322px;
+    width: 350px;
     margin: 10px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     align-content: space-around;
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
@@ -132,7 +130,7 @@ body {
     height: 50px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .grid-container {
         display: grid;
         gap: 10px;
@@ -151,17 +149,47 @@ body {
         padding: 5px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin: 25px;
+        padding: 25px;
     }
-
+    
+    .banner h1, p {
+        width: 500px;
+    }
     .banner img {
         height: 344px;
         width: 612px;
     }
-}
+    
+    .card {
+        margin: 25px;
+    }
 
-/*.
-@media (min-width: 1250px) {
+    .cooking1 {
+        order: 1;
+    }
+    .cooking2 {
+        order: 2;
+    }
+    .cooking3 {
+        order: 3;
+        height: 322px;
+        width: 350px;
+    }
+    .cooking4 {
+        order: 4;
+    }
+    .cooking5 {
+        order: 5;
+    }
+    .cooking6 {
+        order: 6;
+    }
+}
+/*`
+
+@media (min-width: 1150px) and (max-width: 1440px) {
     .grid-container {
         display: grid;
         gap: 10px;
@@ -176,10 +204,38 @@ body {
 
     .banner {
         grid-area: banner;
-        background-color: aqua;
+        background-color: pink;
         padding: 5px;
+        max-width: 1300px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: flex-start;
     }
+
+    .card {
+        height: 322px;
+        width: 350px;
+        margin: 10px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: space-around;
+        box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    }
+
+    .banner h1, p {
+        margin: 5px;
+        width: 500px;
+    }
+    .banner img {
+        padding: 5px;
+        height: 364px;
+        width: 757px;
+        border-radius: 16px;
+    }
+
+    
 }
