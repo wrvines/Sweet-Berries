@@ -106,6 +106,10 @@ body {
     border: 1px hotpink solid;
 }
 
+.card p {
+    color: #83869A;
+}
+
 .card img {
     margin-top: -70px;
 }
