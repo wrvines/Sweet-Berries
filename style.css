@@ -153,11 +153,11 @@ body {
     height: 50px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .grid-container {
         display: grid;
         gap: 10px;
-        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "header header"
             "banner banner"
@@ -180,7 +180,6 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
     }
     .banner h1, p {
         width: 500px;
@@ -217,7 +216,7 @@ body {
 }
 
 
-@media (min-width: 1080px) and (max-width: 1440px) {
+@media (min-width: 1200px) {
     .grid-container {
         display: grid;
         gap: 10px;
@@ -243,16 +242,21 @@ body {
     .card {
         height: 322px;
         width: 350px;
-        margin: 10px;
+        margin: 25px;
         border-radius: 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        align-content: space-around;
-        box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
     }
 
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-content: center;
+    }
     .banner h1, p {
         margin: 5px;
         width: 500px;
