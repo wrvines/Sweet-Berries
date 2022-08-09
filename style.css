@@ -61,6 +61,8 @@ body {
 .banner img {
     padding: 5px;
     align-self: center;
+    height: 217px;
+    width: 347px;
 }
 .card-container {
     grid-area: cardcontainer;
@@ -129,7 +131,7 @@ body {
     padding: 15px;
     height: 50px;
 }
-/*
+
 @media (min-width: 600px) {
     .grid-container {
         display: grid;
@@ -148,10 +150,17 @@ body {
         background-color: aqua;
         padding: 5px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
     }
+
+    .banner img {
+        height: 344px;
+        width: 612px;
+    }
 }
+
+/*.
 @media (min-width: 1250px) {
     .grid-container {
         display: grid;
