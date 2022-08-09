@@ -19,11 +19,13 @@
 .header {
     grid-area: header;
     background-color: rgb(67, 141, 206);
+    height: 100px;
 }
 
 .banner {
     grid-area: banner;
     background-color: aqua;
+    height: 350px;
 }
 
 .card-container {
@@ -43,4 +45,5 @@
 .footer {
     grid-area: footer;
     background-color: rgb(20, 51, 51);
+    height: 50px;
 }
