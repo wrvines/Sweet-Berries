@@ -47,6 +47,10 @@ body {
     height: 200px;
 }
 
+.header p {
+    color: #FF4C4C;
+}
+
 .header a {
     color:#FF4C4C;
     text-decoration: none;
@@ -152,7 +156,8 @@ body {
     padding: 15px;
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+/*tablet*/
+@media (min-width: 426px) and (max-width: 768px) {
     .grid-container {
         display: grid;
         gap: 10px;
@@ -206,7 +211,7 @@ body {
     }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 425px) {
     .grid-container {
         display: grid;
         gap: 10px;
