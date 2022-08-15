@@ -47,10 +47,13 @@ body {
     height: 200px;
 }
 
-.header p {
-    color: #FF4C4C;
+#menuchk {
+    display: none;
 }
 
+.burger {
+    display: none;
+}
 .header a {
     color:#FF4C4C;
     text-decoration: none;
@@ -157,7 +160,7 @@ body {
 }
 
 /*tablet*/
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
     .grid-container {
         display: grid;
         gap: 10px;
@@ -211,7 +214,7 @@ body {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 499px) {
     .grid-container {
         display: grid;
         gap: 10px;
@@ -222,10 +225,30 @@ body {
     .header {
         grid-column: span 1;
         grid-row: span 1;
+        margin-bottom: 50px;
     }
 
     .header img {
         height: 100px;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        color: #FF4C4C;
+    }
+    
+    #menuchk:checked + nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+        position: absolute;
+        top: 50px;
+        left: 0;
     }
 
     .banner {
@@ -235,6 +258,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        margin-top: 50px;
     }
 
     .banner-text {
