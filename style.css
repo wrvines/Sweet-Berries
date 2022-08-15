@@ -189,9 +189,9 @@ body {
     .banner img {
         padding: 15px;
         align-self: center;
-        height: 344px;
-        width: 612px;
+        max-width: 500px;
         border-radius: 39px;
+        object-fit: cover;
     }
 
     .card-container {
@@ -251,9 +251,9 @@ body {
     .banner img {
         padding: 15px;
         align-self: center;
-        height: 217px;
         width: 379px;
         border-radius: 39px;
+        object-fit: cover;
     }
 
     .card-container {
