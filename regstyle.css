@@ -121,9 +121,6 @@ body {
     padding: 15px;
 }
 
-.footer h3:hover {
-    color: black;
-}
 
 @media (min-width: 500px) and (max-width: 800px) {
     .grid-container {
@@ -162,4 +159,44 @@ body {
         grid-column: span 2;
         grid-row: span 1;
         text-align: center;
+    }
+}
+    @media (max-width: 499px) {
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+        }
+    
+        .header {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    
+        .header img {
+            height: 100px;
+        }
+
+        .info {
+            grid-column: span 1;
+            grid-row: span 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .pictures {
+            grid-column: span 1;
+            grid-row: span 5;
+        }
+
+        .footer {
+            grid-column: span 1;
+            grid-row: span 1;
+            text-align: center;
+        }
+        
     }
