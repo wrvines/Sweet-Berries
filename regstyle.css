@@ -68,3 +68,33 @@ body {
 .header button:hover {
     color: white;
 }
+
+.info {
+    grid-column: span 1;
+    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.pictures {
+    grid-column: span 2;
+    grid-row: span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pictures img{
+    height: 300px;
+    width: 300px;
+}
+
+
+.footer {
+    grid-column: span 3;
+    grid-row: span 1;
+    background-color: #FF4C4C;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 15px;
+}
