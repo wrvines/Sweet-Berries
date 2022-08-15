@@ -85,12 +85,17 @@ body {
     max-width: 500px;
 }
 
+.banner-text p {
+    color: #83869A;
+}
+
 .banner img {
     padding: 15px;
     align-self: center;
     height: 312px;
     width: 650px;
     border-radius: 39px;
+    object-fit: cover;
 }
 
 .card-container {
