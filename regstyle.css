@@ -1,0 +1,70 @@
+/*
+- Primary Color
+
+       - #FF4C4C
+
+- Secondary Color
+
+       - #A94E97
+
+- Text Colors
+
+      - Black: #000000
+
+      - Grey: #83869A
+
+      - Links: #FF4C4C
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 1fr 1fr 1fr 50px;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.header img {
+    height: 200px;
+}
+
+.header a {
+    color:#FF4C4C;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.header a:hover {
+    color: black;
+}
+
+.header button {
+    width: 125px;
+    height: 41px;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.header button:hover {
+    color: white;
+}
