@@ -54,6 +54,7 @@ body {
 .burger {
     display: none;
 }
+
 .header a {
     color:#FF4C4C;
     text-decoration: none;
@@ -226,6 +227,7 @@ body {
         grid-column: span 1;
         grid-row: span 1;
         margin-bottom: 50px;
+        margin-top: 25px;
     }
 
     .header img {
