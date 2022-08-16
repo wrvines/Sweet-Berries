@@ -234,6 +234,11 @@ body {
         height: 100px;
     }
 
+    .header button {
+        width: 95px;
+        height: 31px;
+    }
+
     .header nav {
         display: none;
     }
