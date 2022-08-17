@@ -91,6 +91,12 @@ body {
     border-radius: 4px;
     width: 200px;
     margin-bottom: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.info input:focus {
+    border: 1px solid #FF4C4C;
 }
 
 .classes {
@@ -98,6 +104,8 @@ body {
     border-radius: 4px;
     width: 200px;
     margin-bottom: 5px;
+    border: none;
+    padding: 5px;
 }
 
 .info label {
@@ -108,6 +116,10 @@ body {
     color: white;
 }
 
+.info form {
+    display: flex;
+    flex-direction: column;
+}
 .submit-btn, .reset-btn {
     width: 95px;
     height: 31px;
@@ -117,6 +129,9 @@ body {
     margin-top: 15px;
 }
 
+.submit-btn:hover, .reset-btn:hover {
+    color: white;
+}
 .pictures {
     grid-column: span 2;
     grid-row: span 3;
