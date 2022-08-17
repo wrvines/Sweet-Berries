@@ -127,6 +127,10 @@ body {
     padding: 10px;
     margin: 45px 45px;
     box-shadow: 5px 10px 18px #888888;
+    opacity: .5;
+}
+.card:hover {
+    opacity: 1;
 }
 
 .card p {
