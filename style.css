@@ -29,7 +29,7 @@ body {
 
 .grid-container {
     display: grid;
-    gap: 10px;
+    gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px 1fr 1fr 1fr 50px;
     
@@ -39,13 +39,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 1rem;
     grid-column: span 3;
     grid-row: span 1;
 }
 
 .header img {
-    height: 200px;
+    width: 12em;
+    height: 12em;
 }
 
 #menuchk {
