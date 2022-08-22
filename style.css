@@ -73,10 +73,12 @@ body {
     border-radius: 28px;
     background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
     box-shadow: 5px 5px 10px #888888;
+    transition: 100ms;
 }
 
 .header button:hover {
     color: white;
+    transform: scale(1.2);
 }
 
 .banner {
@@ -133,6 +135,7 @@ body {
 }
 .card:hover {
     opacity: 1;
+    
 }
 
 .card p {
