@@ -59,13 +59,13 @@ body {
     color:#FF4C4C;
     text-decoration: none;
     margin: 10px;
-    display: inline;
+    display: inline-block;
     transition: 100ms;
 }
 
 .header a:hover {
     color: black;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .header button {
@@ -79,7 +79,7 @@ body {
 
 .header button:hover {
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .info {
@@ -132,10 +132,12 @@ input[type=submit], input[type=reset] {
     width: 95px;
     height: 31px;
     border-radius: 28px;
+    transition: 100ms;
 }
 
 .submit-btn:hover, .reset-btn:hover {
     color: white;
+    transform: scale(1.1);
 }
 .pictures {
     grid-column: span 2;
