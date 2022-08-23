@@ -71,6 +71,7 @@ body {
 .header button {
     width: 125px;
     height: 41px;
+    border: none;
     border-radius: 28px;
     background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
     box-shadow: 5px 5px 10px #888888;
